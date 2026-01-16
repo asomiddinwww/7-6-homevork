@@ -1,0 +1,9 @@
+import React from 'react'
+
+const Bolmlar = () => {
+  return (
+    <div>Bolmlar</div>
+  )
+}
+
+export default Bolmlar
