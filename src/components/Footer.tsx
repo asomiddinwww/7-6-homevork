@@ -38,7 +38,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* 2. Menu bo'limi */}
         <div className="flex flex-col space-y-4">
           <h2 className="text-2xl font-bold mb-2">Menu</h2>
           <nav className="flex flex-col space-y-3">
@@ -52,7 +51,6 @@ const Footer = () => {
           </nav>
         </div>
 
-        {/* 3. Obuna bo'lish bo'limi */}
         <div className="flex flex-col space-y-4 text-center md:text-right">
           <h2 className="text-xl font-bold">Yangiliklarga obuna bo'ling!</h2>
           <p className="text-sm text-gray-300">Tezkor yangiliklar e-mail orqali</p>

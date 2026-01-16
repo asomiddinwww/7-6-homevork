@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const CATEGORIES = [
   { id: 1, name: 'Beton va qorishmalar', icon: 'https://cdn-icons-png.flaticon.com/512/4231/4231005.png' },
@@ -29,7 +29,6 @@ const Home = () => {
 
   return (
     <div className="bg-[#f0f4f8] min-h-screen font-sans pb-20">
-      {/* 1. Yuqori Dropdown qismi (O'ng burchak) */}
       <div className="max-w-[1440px] mx-auto px-10 py-4 flex justify-end relative">
         <div className="bg-white shadow-lg border border-blue-50 rounded-md py-2 w-48 text-sm z-50">
           <div className="px-4 py-2 text-[#00a3ff] cursor-pointer hover:bg-blue-50">Yangiliklar</div>
@@ -40,7 +39,6 @@ const Home = () => {
 
       <div className="max-w-[1440px] mx-auto px-10">
         
-        {/* 2. Kategoriyalar Setkasi */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
           {CATEGORIES.map((cat) => (
             <div key={cat.id} className="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-4 hover:shadow-md transition cursor-pointer min-h-[80px]">
@@ -52,7 +50,6 @@ const Home = () => {
           ))}
         </div>
 
-        {/* 3. Sarlavha va ko'rinishni boshqarish */}
         <div className="mb-8">
           <h2 className="text-2xl font-black text-[#002d72] mb-6 tracking-tight">KO'P KO'RILGANLAR</h2>
           <div className="flex gap-2">
@@ -68,11 +65,9 @@ const Home = () => {
           </div>
         </div>
 
-        {/* 4. Mahsulotlar Kartochkalari */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {PRODUCTS.map((product) => (
             <div key={product.id} className="bg-white rounded-xl border border-gray-100 flex flex-col hover:shadow-xl transition-shadow duration-300">
-              {/* Mahsulot rasmi */}
               <div className="relative p-6 aspect-square flex items-center justify-center bg-[#fcfcfc]">
                 <img src={product.img} alt={product.title} className="max-h-full object-contain" />
                 <button className="absolute top-4 right-4 text-slate-300 hover:text-blue-500">
@@ -80,7 +75,6 @@ const Home = () => {
                 </button>
               </div>
 
-              {/* Mahsulot Ma'lumoti */}
               <div className="p-5 flex flex-col flex-grow">
                 <span className="bg-[#eef7ff] text-[#00a3ff] text-[11px] font-bold px-2 py-1 rounded w-fit mb-3">
                   {product.code}
@@ -89,7 +83,6 @@ const Home = () => {
                   {product.title}
                 </h3>
 
-                {/* Tugmalar */}
                 <div className="mt-auto flex gap-2">
                   <button className="flex-grow py-2.5 px-4 rounded-lg border border-[#00a3ff] text-[#00a3ff] text-sm font-bold hover:bg-[#00a3ff] hover:text-white transition-colors">
                     Ko'rish

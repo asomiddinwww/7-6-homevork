@@ -1,7 +1,7 @@
 
 const Bolmlar = () => {
   return (
-    <div>Bolmlar</div>
+    <div>Bolmlaffr</div>
   )
 }
 
